@@ -1,0 +1,143 @@
+@import "variables.scss";
+
+.navbar {
+	align-items: center;
+	background-color: $foreground-color;
+	border-bottom: 1px solid $border-color;
+	box-sizing: border-box;
+	display: flex;
+	height: 50px;
+	left: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+
+	.sidebar-btn-container {
+		padding-right: 10px;
+		width: 40px;
+
+		.sidebar-btn {
+			color: $sidebar-btn-color;
+			cursor: pointer;
+		}
+		.sidebar-btn:hover { color: darken($sidebar-btn-color, 10%); }
+		.sidebar-btn:active { color: darken($sidebar-btn-color, 20%); }
+	}
+
+	.logo {
+		display: inline;
+		margin: 0;
+		padding-right: 50px;
+
+		.navbar-title {
+			color: #000000;
+			text-decoration: none;
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		.logo { display: none; }
+	}
+
+	.nav-right-container {
+		align-items: center;
+		display: flex;
+		flex-direction: row-reverse;
+		height: 30px;
+		margin-left: auto;
+		position: relative;
+
+		.sign-in-btn {
+			box-sizing: border-box;
+			cursor: pointer;
+			height: 30px;
+			padding: 5px;
+			text-decoration: none;
+		}
+
+		.account-dropdown {
+			order: 1;
+		}
+
+		.writer-panel-btn {
+			line-height: 30px;
+			order: 2;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		.dropdown-btn {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		.dropdown {
+			display: inline-block;
+			position: relative;
+
+			.dropdown-btn {
+				cursor: pointer;
+				line-height: 30px;
+
+				&:hover { color: $primary-color; }
+			}
+
+			.dropdown-content {
+				background-color: #ffffff;
+				box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+				display: none;
+				min-width: 150px;
+				position: absolute;
+				right: 0;
+				z-index: 2;
+
+				a {
+					background-color: #ffffff;
+					color: #000000;
+					cursor: pointer;
+					display: block;
+					padding: 12px 16px;
+					text-decoration: none;
+					&:hover { background-color: darken(#ffffff, 5%); }
+					&:active { background-color: darken(#ffffff, 10%); }
+				}
+			}
+		}
+	}
+
+	.search-container {
+		display: flex;
+		flex-grow: 0.4;
+		height: 30px;
+		position: relative;
+
+		input {
+			border: 1px solid $input-border-color;
+			border-right: 0;
+			border-radius: 0;
+			box-sizing: border-box;
+			flex-grow: 5;
+			font-size: 1rem;
+			height: 30px;
+			margin: 0;
+			padding: 0 0 0 5px;
+		}
+
+		button {
+			background-color: $background-color;
+			border: 1px solid $input-border-color;
+			box-sizing: border-box;
+			cursor: pointer;
+			height: 30px;
+			margin: 0;
+			max-width: 80px;
+			padding: 0;
+			width: 70px;
+
+			&:active { background-color: darken($border-color, 5%); }
+		}
+	}
+}

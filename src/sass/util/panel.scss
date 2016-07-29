@@ -1,0 +1,60 @@
+@import "variables.scss";
+
+.panel {
+	background-color: #ffffff;
+	border: 1px solid rgba(0, 0, 0, 0.09);
+	border-radius: 3px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+	box-sizing: border-box;
+	padding: 20px;
+
+	.item-heading {
+		border-bottom: 1px solid $border-color;
+		display: flex;
+		margin-bottom: 20px;
+
+		.item-title {
+			font-family: $fonts-normal;
+			font-weight: normal;
+			display: inline-block;
+			margin: 20px 0px 10px;
+		}
+
+		.item-heading-right {
+			color: $darker;
+			display: flex;
+			flex-direction: column-reverse;
+			font-size: 13px;
+			margin-left: auto;
+			padding: 5px;
+		}
+	}
+}
+
+.panel-heading {
+	border-bottom: 1px solid $border-color;
+	font-family: $fonts-normal;
+	font-weight: normal;
+	margin: 0;
+	padding: 20px 0 10px;
+}
+
+.panel-footer {
+	border-top: 1px solid $border-color;
+	display: flex;
+	flex-direction: row-reverse;
+	margin: 0;
+	padding: 20px 0 0 0;
+}
+
+.panel-field-header {
+	font-family: Roboto, Helvetica, sans-serif;
+	margin: 15px 0;
+}
+
+.panel-seperator {
+	border-bottom: 1px solid $border-color;
+	height: 0;
+	margin: 15px 0;
+	width: 100%;
+}

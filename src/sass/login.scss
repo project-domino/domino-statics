@@ -1,0 +1,24 @@
+@import "util/variables.scss";
+@import "main.scss";
+
+.login-panel, button, input {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.login-panel {
+	margin-top: 5%;
+	text-align: center;
+	width: 500px;
+
+	button {
+		margin-top: 10px;
+		width: 50%;
+	}
+	input { width: 80%; }
+	.seperator { display: block; }
+}
+
+@media only screen and (max-width: 500px) {
+	.login-panel { width: 100%; }
+}

@@ -1,0 +1,43 @@
+@import "writer-panel.scss";
+
+.form-input {
+	width: 100%;
+}
+
+.new-note-editor {
+	border: 1px solid $input-border-color;
+	box-sizing: border-box;
+	min-height: 500px;
+	width: 100%;
+}
+
+.toolbar {
+	border: 1px solid $input-border-color;
+	border-bottom: none;
+}
+
+.tag-selector {
+	margin-bottom: 20px;
+}
+
+.publish-btn {
+	margin-left: 10px;
+}
+
+.tag-selector-container {
+	margin-bottom: 20px;
+	width: 100%;
+
+	.tag-selector {
+		width: 100%;
+	}
+}
+
+.note-description {
+	border: 1px solid $input-border-color;
+	box-sizing: border-box;
+	max-width: 100%;
+	min-height: 50px;
+	min-width: 100%;
+	width: 100%;
+}

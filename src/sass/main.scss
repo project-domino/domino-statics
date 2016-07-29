@@ -1,0 +1,39 @@
+@import "util/variables.scss";
+@import "util/grid.scss";
+@import "util/modal.scss";
+@import "util/header.scss";
+@import "util/form.scss";
+@import "util/panel.scss";
+
+// Main styles for the whole website
+html, body {
+	background-color: $background-color;
+	font-family: $fonts-light;
+	margin: 0;
+	overflow-x: hidden;
+	padding: 0;
+	width: 100vw;
+}
+
+body {
+	min-height: calc(100vh - 50px);
+
+	.main-content {
+		left: 0;
+		min-height: calc(100vh - 50px);
+		overflow-x: hidden;
+		padding-top: 50px;
+		position: relative;
+		width: 100%;
+	}
+}
+
+.hidden {
+	border: none;
+	display: none;
+}
+
+.no-content-text {
+	color: $darker;
+	display: block;
+}
